@@ -1,0 +1,92 @@
+.RightPane {
+	box-sizing: border-box;
+	background-color: rgb(109, 66, 3);
+    position: relative;
+}
+
+.RightPane .recipe-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 500px;
+    background-color: #dbce92;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    position: relative; 
+    min-height: 400px; 
+}
+
+.RightPane .recipe-details h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+P{
+    font-size: 1.2em;
+    color: #ff0000;
+    font-style: italic;
+}
+
+.edit-form{
+    width: 80%;
+    max-width: 500px;
+    background-color: #8b7c37;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    position: absolute; 
+    bottom: 60px; /* Az elem az alján helyezkedik el */
+    left: 50%; /* Középre igazítjuk vízszintesen */
+    transform: translateX(-50%); /* Középre igazítjuk vízszintesen */
+}
+
+
+.mode-change-button{
+    position: absolute; 
+    bottom: 30px; 
+    right: 30px;
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; /* Kör alakúvá teszi a gombot */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.mode-change-button:hover {
+    background-color: #646363;
+}
+// dark mode
+body.dark-mode {
+    background-color: #2c1a0a;
+}
+
+body.dark-mode .RightPane {
+    background-color: #424242;
+}
+
+.dark-mode .recipe-details {
+    background-color: #000000;
+    color: #ffffff;
+}

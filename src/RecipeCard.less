@@ -1,0 +1,45 @@
+.RecipeCard {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.RecipeCard.selected {
+    background-color: #f0f0f0;
+}
+
+.RecipeCard h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.RecipeCard time {
+    display: block;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.RecipeCard .delete-button {
+    background: rgb(240, 227, 182);
+    border: none;
+    cursor: pointer;
+    color: #e74c3c; 
+    font-size: 1.5em; 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; /* Kör alakúvá teszi a gombot */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RecipeCard .delete-button:hover {
+    color: #c0392b; 
+}
+
+.RecipeCard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
