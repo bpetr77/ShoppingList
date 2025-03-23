@@ -1,15 +1,50 @@
-# `create-preact`
+# 📌 Preact-Based Recipe Manager App
 
-<h2 align="center">
-  <img height="256" width="256" src="./src/assets/preact.svg">
-</h2>
+This project is a **Preact and TypeScript**-based recipe management application that allows users to create, edit, and delete recipes, as well as track the status of individual ingredients (e.g., purchased or not).
 
-<h3 align="center">Get started using Preact and Vite!</h3>
+---
 
-## Getting Started
+## 🚀 Installation and Running
 
--   `npm run dev` - Starts a dev server at http://localhost:5173/
+### **1. Install Dependencies**
+```sh
+npm install
+```
+### **2. Start Development Server**
+```sh
+npm start
+```
+### **3. Open on your browser**
+```sh
+http://localhost:5173/
+```
+---
+## 🛠️ Technologies Used
 
--   `npm run build` - Builds for production, emitting to `dist/`
+  - Preact – A lightweight and fast alternative to React
+  - TypeScript – Type-safe JavaScript
+  - Less – CSS preprocessor
+  - IndexedDB – Browser-based database for local storage
+  - LocalStorage – Web storage for user preferences and settings 
+    
+## 🌙 Dark Mode Support
 
--   `npm run preview` - Starts a server at http://localhost:4173/ to test production build locally
+  - Users can manually switch between light and dark modes, with the preference saved using localStorage.
+
+## 💾 Data Storage
+
+  - IndexedDB: Used for storing recipe data, which offers:
+
+    - Offline functionality: Users can access and modify recipes without an internet connection
+    - Structured storage: Ideal for complex recipe data with ingredients and instructions
+    - Performance: Fast retrieval of large data sets with minimal impact on application performance
+    - Persistence: Recipe data persists between browser sessions
+
+  - LocalStorage: Used for storing user preferences and app settings:
+
+    - Simple key-value storage: Perfect for theme preferences, UI settings, and recent searches
+    - Immediate synchronous access: Quick retrieval of frequently accessed settings
+    - Broad browser compatibility: Works reliably across all modern browsers
+
+This application uses a dual storage approach to balance performance and simplicity:
+The combination of these storage solutions ensures both robust data handling and responsive user experience.
